@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Request Form</title>
+    <link href="/css/bootstrap-4.6.2-dist/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/travelrequestform.css">
+    <script src="/js/travelrequestform.js"></script>
+    <script src="/js/logout.js"></script>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <h2 style="color: aliceblue;" class="navbar-brand">TRAVEL REQUESTOR</h2>
+        <a href="/pages/login.html" class="btn btn-primary  active btn-sm" tabindex="-1" role="button"
+            aria-disabled="true" onclick="back()">Log
+            out</a>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+        <a href="/pages/travelrequestform.html" class="btn btn-dark  active btn-sm" tabindex="-1" role="button"
+            aria-disabled="true">Form</a>
+        <a href="/pages/userview.html" class="btn btn-dark  active btn-sm" tabindex="-1" role="button"
+            aria-disabled="true">View Request</a>
+        
+    </nav>
+    <div>
+        <div class="container">
+            <h3>Travel Request Form</h3><br>
+            <form id="frmTravelRequest" class="form-group ">
+                <div class="form-group mx-sm-3 mb-2  ">
+
+                    <!--getting employee id-->
+                    <label for="empid">Employee Id</label>
+                    <input type="text" id="empid" placeholder="Employee ID" class="form-control" >
+                    <span id="empidError" class="error"></span><br>
+
+                    <!--getting employee name-->
+                    <label for="empname">Employee Name</label>
+                    <input type="text" id="empname" placeholder="Employee Name" class="form-control" >
+                    <span id="empnameError" class="error"></span><br>
+
+                </div>
+
+                <div class="form-group mx-sm-3 mb-2  ">
+
+                    <!--getting employees project-->
+                    <label for="project">Project</label>
+                    <input type="text" id="project" placeholder="Project" class="form-control" >
+                    <span id="projectError" class="error"></span><br>
+
+                    <!--getting cause of travel-->
+
+                    <label for="causeoftravel">Cause for travel</label>
+                    <input type="text" id="travel" placeholder="Cause" class="form-control" >
+                    <span id="causeError" class="error"></span><br>
+
+                </div>
+
+                <div class="form-group mx-sm-3 mb-2  ">
+                    <!--getting source-->
+
+                    <label for="source">Source</label>
+                    <input type="text" id="source" placeholder="Source" class="form-control" >
+                    <span id="sourceError" class="error"></span><br>
+
+
+                    <!--getting employee name-->
+
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" placeholder="Destination" class="form-control" >
+                    <span id="destinationError" class="error"></span><br>
+
+                </div>
+                <div class="form-group mx-sm-3 mb-2   ">
+                    <!--from date-->
+
+                    <label for="fromdate">From Date</label>
+                    <input type="date" id="fromdate" class="form-control" >
+                    <span id="fromdateError" class="error"></span><br>
+
+                    <!--getting employee name-->
+
+                    <label for="noofdays">Number of days</label>
+                    <input type="number" id="noOfDays" placeholder="1" readonly  class="form-control">
+                    <span id="noOfDaysError" class="error"></span><br>
+                </div>
+
+                <div class="form-group mx-sm-3 mb-2  ">
+                 <!--to date-->
+
+
+                    <label for="todate">To Date</label>
+                    <input type="date" id="toDate" class="form-control" >
+                    <span id="todateError" class="error"></span><br>
+                    <!--mode of travel-->
+
+                    <label for="mode">Mode of Travel</label>
+                    <input type="text" id="modeoftravel" placeholder="Mode of Travel" class="form-control" >
+                    <span id="modeError" class="error"></span><br>
+                    <!--priority-->
+                    <label for="--priority--">Priority </label>
+                    <select id="priority" name="priority" class="form-control">
+                        <option value="critical">Critical</option>
+                        <option value="normal">Normal</option>
+                    </select>
+                    <span id="priorityError" class="error"></span><br>
+
+                </div>
+
+                <div id="btn" align="end">
+                <button class="btn btn-dark" type="submit">Request</button>
+            </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
